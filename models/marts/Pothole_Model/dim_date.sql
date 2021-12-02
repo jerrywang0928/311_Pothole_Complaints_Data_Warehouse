@@ -1,7 +1,7 @@
 with dim_date as (
 SELECT
     ROW_NUMBER() OVER() as dim_date_id, 
-    FORMAT_DATE("%Y%m%d",d) as date_integer,
+    FORMAT_DATE('%Y%m%d',d) as date_integer,
     d AS full_date,
     EXTRACT(YEAR FROM d) AS year,
     EXTRACT(WEEK FROM d) AS year_week,
