@@ -22,9 +22,9 @@ select
     Pressure_Max,		
     Pressure_M,		
     Precipitation_Total
-from `complaint-project-331901.311_Compaints.Weather_Raw` as weather 
+from ( select FORMAT_DATE('%Y/%m/%d',WDate) as weather_date, * from `complaint-project-331901.311_Compaints.Weather_Raw` )as weather 
 
-INNER JOIN {{ref ('dim_date')}} AS date_dimension on weather.WDate = date_dimension.full_date
+INNER JOIN {{ref ('dim_date')}} AS date_dimension on weather.weather_date = date_dimension.full_date
 
 INNER JOIN {{ref ('dim_location')}} AS location_dimension on upper(weather.Borough) = location_dimension.borough
 
