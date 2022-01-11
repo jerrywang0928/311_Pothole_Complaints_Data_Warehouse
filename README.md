@@ -1,15 +1,1 @@
-Welcome to your new dbt project!
-
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Taking a look at 311 complaints, we can see that a majority of the complaints are about street conditions, unsanitary conditions, and plumbing issues- all which could be considered an infrastructure issue. One particular type of problem that NYC faces that we hope to address is its street conditions, racking up a total of 93,270 complaints to 311 in just the year 2017 alone. As citizens who ride on the streets of New York daily and are frustrated with the conditions, we as data analysts were determined to figure out why the street or road conditions were so bad. We plan to use Street Pothole Work Orders and/or a weather dataset in combination with the street conditions complaints from 311 to dig deeper into the issue.
